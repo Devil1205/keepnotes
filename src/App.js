@@ -17,7 +17,7 @@ function App() {
   const createNote = async () => {
     let title = document.querySelector('.addNote input').value;
     let description = document.querySelector('.addNote textarea').value;
-    if (localStorage.getItem('note') === null) {
+    if (JSON.parse(localStorage.getItem('note')).length === 0) {
       setLocalStorageArray(localStorageArray.push({ sno: 0, title: title, description: description }));
       localStorage.setItem("note", JSON.stringify(localStorageArray));
       console.log(localStorage.getItem('note'));

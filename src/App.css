@@ -1,9 +1,24 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
-.addNote{
+.customNavbar {
+    position: sticky;
+    top: 0;
+    height: 70px;
+    background-color: #ffb52e;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    text-shadow: 3px 4px 8px #301d03;
+}
+
+.addNote {
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -12,14 +27,14 @@
     box-shadow: 0px 1px 10px 1px grey;
 }
 
-.addNote input{
+.addNote input {
     border: none;
     outline: 0px;
     font-weight: 500;
     font-size: 20px;
 }
 
-.addNote textarea{
+.addNote textarea {
     border: none;
     outline: 0px;
     transition: 500ms linear;
@@ -37,12 +52,12 @@
     transition: 500ms linear;
 }
 
-.addNoteBtn img{
+.addNoteBtn img {
     filter: invert(1);
     height: 100%;
 }
 
-.notesItem{
+.notesItem {
     background-color: aliceblue;
     /* width: 20vw; */
     min-height: 150px;
@@ -51,4 +66,19 @@
     flex-direction: column;
     padding: 10px;
     border-radius: 10px;
+}
+
+.deleteNoteBtn{
+    border-radius: 30px;
+    background-color: lightgray;
+    box-sizing: content-box;
+    padding: 7px;
+    cursor: pointer;
+    position: relative;
+    left: 88%;
+    bottom: -20px;
+}
+
+.deleteNoteBtn:hover{
+    background-color: rgb(161, 161, 161);
 }

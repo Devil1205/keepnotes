@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -70,14 +69,13 @@
     position: relative;
 }
 
-.deleteNoteBtn{
+.deleteNoteBtn {
     border-radius: 30px;
-    /* background-color: lightgray; */
     box-sizing: content-box;
     padding: 7px;
     cursor: pointer;
 }
 
-.deleteNoteBtn:hover{
-    background-color: rgb(161, 161, 161);
+.deleteNoteBtn:hover {
+    background-color: lightgray;
 }

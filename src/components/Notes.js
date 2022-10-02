@@ -27,8 +27,8 @@ function Notes(props) {
                     })}
                 </div>
                 <div className="container d-flex my-4">
-                    <button className='btn btn-success' disabled={JSON.parse(localStorage.getItem("note")).length === 0 || props.page === 0} onClick={prevClick}>Previous</button>
-                    <button className='btn btn-success' disabled={JSON.parse(localStorage.getItem("note")).length === 0 ? true : Math.floor((Object.keys(JSON.parse(localStorage.getItem('note'))).length - 1) / 6) === props.page} onClick={nextClick} style={{ marginLeft: "auto" }}>Next</button>
+                    <button className='btn btn-success' disabled={localStorage.getItem('note')===null || JSON.parse(localStorage.getItem("note")).length === 0 || props.page === 0} onClick={prevClick}>Previous</button>
+                    <button className='btn btn-success' disabled={localStorage.getItem('note')===null || JSON.parse(localStorage.getItem("note")).length === 0 ? true : Math.floor((Object.keys(JSON.parse(localStorage.getItem('note'))).length - 1) / 6) === props.page} onClick={nextClick} style={{ marginLeft: "auto" }}>Next</button>
                 </div>
             </div>
             <div className="container-fluid" style={{display: "flex",justifyContent: "center"}}>
